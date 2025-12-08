@@ -5,11 +5,13 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
 
 / {
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
+        zmk,physical-layout = &default_layout;
     };
 
     default_transform: keymap_transform_0 {
@@ -28,6 +30,78 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                 RC(2,6) RC(2,7) 
 RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) RC(3,8) RC(3,9) RC(3,10) RC(3,11)
                         RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,7) RC(4,8) RC(4,9) RC(4,10)
         >;
+    };
+
+    default_layout: default_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
+        
+        keys  // 58 keys total from KLE layout
+            // Row 0 - Top row
+            = <&key_physical_attrs 100 100   950     0 0>  // Key 1: (0.5u, 0u)
+            , <&key_physical_attrs 100 100  1900     0 0>  // Key 5: (1u, 0u)
+            , <&key_physical_attrs 100 100  4750     0 0>  // Key 9: (2.5u, 0u)
+            , <&key_physical_attrs 100 100  6650     0 0>  // Key 14: (3.5u, 0u)
+            , <&key_physical_attrs 100 100  8550     0 0>  // Key 19: (4.5u, 0u)
+            , <&key_physical_attrs 100 100 10450     0 0>  // Key 24: (5.5u, 0u)
+            , <&key_physical_attrs 100 100 12350     0 0>  // Key 31: (6.5u, 0u)
+            , <&key_physical_attrs 100 100 14250     0 0>  // Key 36: (7.5u, 0u)
+            , <&key_physical_attrs 100 100 16150     0 0>  // Key 41: (8.5u, 0u)
+            , <&key_physical_attrs 100 100 18050     0 0>  // Key 46: (9.5u, 0u)
+            , <&key_physical_attrs 100 100 29450     0 0>  // Key 51: (15.5u, 0u)
+            , <&key_physical_attrs 100 100 31350     0 0>  // Key 55: (16.5u, 0u)
+            // Row 1
+            , <&key_physical_attrs 100 100   950  1425 0>  // Key 2: (0.5u, 0.75u)
+            , <&key_physical_attrs 100 100  1900  1425 0>  // Key 6: (1u, 0.75u)
+            , <&key_physical_attrs 100 100  4750  1425 0>  // Key 10: (2.5u, 0.75u)
+            , <&key_physical_attrs 100 100  6650  1425 0>  // Key 15: (3.5u, 0.75u)
+            , <&key_physical_attrs 100 100  8550  1425 0>  // Key 20: (4.5u, 0.75u)
+            , <&key_physical_attrs 100 100 10450  1425 0>  // Key 25: (5.5u, 0.75u)
+            , <&key_physical_attrs 100 100 12350  1425 0>  // Key 32: (6.5u, 0.75u)
+            , <&key_physical_attrs 100 100 14250  1425 0>  // Key 37: (7.5u, 0.75u)
+            , <&key_physical_attrs 100 100 16150  1425 0>  // Key 42: (8.5u, 0.75u)
+            , <&key_physical_attrs 100 100 18050  1425 0>  // Key 47: (9.5u, 0.75u)
+            , <&key_physical_attrs 100 100 29450  1425 0>  // Key 52: (15.5u, 0.75u)
+            , <&key_physical_attrs 100 100 31350  1425 0>  // Key 56: (16.5u, 0.75u)
+            // Row 2
+            , <&key_physical_attrs 100 100   950  2850 0>  // Key 3: (0.5u, 1.5u)
+            , <&key_physical_attrs 100 100  1900  2850 0>  // Key 7: (1u, 1.5u)
+            , <&key_physical_attrs 100 100  4750  2850 0>  // Key 11: (2.5u, 1.5u)
+            , <&key_physical_attrs 100 100  6650  2850 0>  // Key 16: (3.5u, 1.5u)
+            , <&key_physical_attrs 100 100  8550  2850 0>  // Key 21: (4.5u, 1.5u)
+            , <&key_physical_attrs 100 100 10450  2850 0>  // Key 26: (5.5u, 1.5u)
+            , <&key_physical_attrs 100 100 12350  2850 0>  // Key 33: (6.5u, 1.5u)
+            , <&key_physical_attrs 100 100 14250  2850 0>  // Key 38: (7.5u, 1.5u)
+            , <&key_physical_attrs 100 100 16150  2850 0>  // Key 43: (8.5u, 1.5u)
+            , <&key_physical_attrs 100 100 18050  2850 0>  // Key 48: (9.5u, 1.5u)
+            , <&key_physical_attrs 100 100 29450  2850 0>  // Key 53: (15.5u, 1.5u)
+            , <&key_physical_attrs 100 100 31350  2850 0>  // Key 57: (16.5u, 1.5u)
+            // Row 3
+            , <&key_physical_attrs 100 100   950  4275 0>  // Key 4: (0.5u, 2.25u)
+            , <&key_physical_attrs 100 100  1900  4275 0>  // Key 8: (1u, 2.25u)
+            , <&key_physical_attrs 100 100  4750  4275 0>  // Key 12: (2.5u, 2.25u)
+            , <&key_physical_attrs 100 100  6650  4275 0>  // Key 17: (3.5u, 2.25u)
+            , <&key_physical_attrs 100 100  8550  4275 0>  // Key 22: (4.5u, 2.25u)
+            , <&key_physical_attrs 100 100 10450  4275 0>  // Key 27: (5.5u, 2.25u)
+            , <&key_physical_attrs 100 100 11400  4275 0>  // Key 29: (6u, 2.25u)
+            , <&key_physical_attrs 100 100 13300  4275 0>  // Key 30: (7u, 2.25u)
+            , <&key_physical_attrs 100 100 14250  4275 0>  // Key 34: (7.5u, 2.25u)
+            , <&key_physical_attrs 100 100 16150  4275 0>  // Key 39: (8.5u, 2.25u)
+            , <&key_physical_attrs 100 100 18050  4275 0>  // Key 44: (9.5u, 2.25u)
+            , <&key_physical_attrs 100 100 29450  4275 0>  // Key 54: (15.5u, 2.25u)
+            , <&key_physical_attrs 100 100 31350  4275 0>  // Key 58: (16.5u, 2.25u)
+            // Row 4 - Bottom row with rotation
+            , <&key_physical_attrs 100 100  5415  5225 0>  // Key 13: (2.85u, 2.75u)
+            , <&key_physical_attrs 100 100  7315  5225 0>  // Key 18: (3.85u, 2.75u)
+            , <&key_physical_attrs 100 100 11117  5225 100>  // Key 23: (5.85u, 2.75u) rotated 10°
+            , <&key_physical_attrs 100 100 14535  5225 200>  // Key 28: (7.65u, 2.75u) rotated 20°
+            , <&key_physical_attrs 100 100 18468  5225 -200>  // Key 35: (9.72u, 2.75u) rotated -20°
+            , <&key_physical_attrs 100 100 23275  5225 -100>  // Key 40: (12.25u, 2.75u) rotated -10°
+            , <&key_physical_attrs 100 100 27835  5700 0>  // Key 45: (14.65u, 3u)
+            , <&key_physical_attrs 100 100 29735  5700 0>  // Key 50: (15.65u, 3u)
+            ;
     };
 
     kscan0: kscan {
