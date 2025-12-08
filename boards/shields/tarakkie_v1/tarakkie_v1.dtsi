@@ -5,11 +5,78 @@
  */
 
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <physical_layouts.dtsi>
 
 / {
     chosen {
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
+        zmk,physical-layout = &physical_layout0;
+    };
+
+    physical_layout0: physical_layout0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
+        keys  // 58 keys - w   h    x    y   rot  rx  ry
+            = <&key_physical_attrs 100 100   950     0 0 0 0>
+            , <&key_physical_attrs 100 100  1900     0 0 0 0>
+            , <&key_physical_attrs 100 100  4750     0 0 0 0>
+            , <&key_physical_attrs 100 100  6650     0 0 0 0>
+            , <&key_physical_attrs 100 100  8550     0 0 0 0>
+            , <&key_physical_attrs 100 100 10450     0 0 0 0>
+            , <&key_physical_attrs 100 100 12350     0 0 0 0>
+            , <&key_physical_attrs 100 100 14250     0 0 0 0>
+            , <&key_physical_attrs 100 100 16150     0 0 0 0>
+            , <&key_physical_attrs 100 100 18050     0 0 0 0>
+            , <&key_physical_attrs 100 100 29450     0 0 0 0>
+            , <&key_physical_attrs 100 100 31350     0 0 0 0>
+            , <&key_physical_attrs 100 100   950  1425 0 0 0>
+            , <&key_physical_attrs 100 100  1900  1425 0 0 0>
+            , <&key_physical_attrs 100 100  4750  1425 0 0 0>
+            , <&key_physical_attrs 100 100  6650  1425 0 0 0>
+            , <&key_physical_attrs 100 100  8550  1425 0 0 0>
+            , <&key_physical_attrs 100 100 10450  1425 0 0 0>
+            , <&key_physical_attrs 100 100 12350  1425 0 0 0>
+            , <&key_physical_attrs 100 100 14250  1425 0 0 0>
+            , <&key_physical_attrs 100 100 16150  1425 0 0 0>
+            , <&key_physical_attrs 100 100 18050  1425 0 0 0>
+            , <&key_physical_attrs 100 100 29450  1425 0 0 0>
+            , <&key_physical_attrs 100 100 31350  1425 0 0 0>
+            , <&key_physical_attrs 100 100   950  2850 0 0 0>
+            , <&key_physical_attrs 100 100  1900  2850 0 0 0>
+            , <&key_physical_attrs 100 100  4750  2850 0 0 0>
+            , <&key_physical_attrs 100 100  6650  2850 0 0 0>
+            , <&key_physical_attrs 100 100  8550  2850 0 0 0>
+            , <&key_physical_attrs 100 100 10450  2850 0 0 0>
+            , <&key_physical_attrs 100 100 12350  2850 0 0 0>
+            , <&key_physical_attrs 100 100 14250  2850 0 0 0>
+            , <&key_physical_attrs 100 100 16150  2850 0 0 0>
+            , <&key_physical_attrs 100 100 18050  2850 0 0 0>
+            , <&key_physical_attrs 100 100 29450  2850 0 0 0>
+            , <&key_physical_attrs 100 100 31350  2850 0 0 0>
+            , <&key_physical_attrs 100 100   950  4275 0 0 0>
+            , <&key_physical_attrs 100 100  1900  4275 0 0 0>
+            , <&key_physical_attrs 100 100  4750  4275 0 0 0>
+            , <&key_physical_attrs 100 100  6650  4275 0 0 0>
+            , <&key_physical_attrs 100 100  8550  4275 0 0 0>
+            , <&key_physical_attrs 100 100 10450  4275 0 0 0>
+            , <&key_physical_attrs 100 100 11400  4275 0 0 0>
+            , <&key_physical_attrs 100 100 13300  4275 0 0 0>
+            , <&key_physical_attrs 100 100 14250  4275 0 0 0>
+            , <&key_physical_attrs 100 100 16150  4275 0 0 0>
+            , <&key_physical_attrs 100 100 18050  4275 0 0 0>
+            , <&key_physical_attrs 100 100 29450  4275 0 0 0>
+            , <&key_physical_attrs 100 100 31350  4275 0 0 0>
+            , <&key_physical_attrs 100 100  5415  5225 0 0 0>
+            , <&key_physical_attrs 100 100  7315  5225 0 0 0>
+            , <&key_physical_attrs 100 100 11117  5225 0 0 0>
+            , <&key_physical_attrs 100 100 14535  5225 0 0 0>
+            , <&key_physical_attrs 100 100 18468  5225 0 0 0>
+            , <&key_physical_attrs 100 100 23275  5225 0 0 0>
+            , <&key_physical_attrs 100 100 27835  5700 0 0 0>
+            , <&key_physical_attrs 100 100 29735  5700 0 0 0>
+            ;
     };
 
     default_transform: keymap_transform_0 {
