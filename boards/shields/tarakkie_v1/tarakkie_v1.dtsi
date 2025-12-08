@@ -92,13 +92,13 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
             , <&key_physical_attrs 100 100 18050  4275 0>  // Key 44: (9.5u, 2.25u)
             , <&key_physical_attrs 100 100 29450  4275 0>  // Key 54: (15.5u, 2.25u)
             , <&key_physical_attrs 100 100 31350  4275 0>  // Key 58: (16.5u, 2.25u)
-            // Row 4 - Bottom row with rotation
+            // Row 4 - Bottom row
             , <&key_physical_attrs 100 100  5415  5225 0>  // Key 13: (2.85u, 2.75u)
             , <&key_physical_attrs 100 100  7315  5225 0>  // Key 18: (3.85u, 2.75u)
-            , <&key_physical_attrs 100 100 11117  5225 100>  // Key 23: (5.85u, 2.75u) rotated 10°
-            , <&key_physical_attrs 100 100 14535  5225 200>  // Key 28: (7.65u, 2.75u) rotated 20°
-            , <&key_physical_attrs 100 100 18468  5225 -200>  // Key 35: (9.72u, 2.75u) rotated -20°
-            , <&key_physical_attrs 100 100 23275  5225 -100>  // Key 40: (12.25u, 2.75u) rotated -10°
+            , <&key_physical_attrs 100 100 11117  5225 0>  // Key 23: (5.85u, 2.75u)
+            , <&key_physical_attrs 100 100 14535  5225 0>  // Key 28: (7.65u, 2.75u)
+            , <&key_physical_attrs 100 100 18468  5225 0>  // Key 35: (9.72u, 2.75u)
+            , <&key_physical_attrs 100 100 23275  5225 0>  // Key 40: (12.25u, 2.75u)
             , <&key_physical_attrs 100 100 27835  5700 0>  // Key 45: (14.65u, 3u)
             , <&key_physical_attrs 100 100 29735  5700 0>  // Key 50: (15.65u, 3u)
             ;
