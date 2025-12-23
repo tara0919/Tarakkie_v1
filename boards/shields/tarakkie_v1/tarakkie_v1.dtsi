@@ -12,15 +12,9 @@
         zmk,kscan = &kscan0;
         zmk,matrix-transform = &default_transform;
         zmk,physical-layout = &physical_layout0;
-        zmk,battery = &vbatt;
     };
 
-    vbatt: vbatt {
-        compatible = "zmk,battery-voltage-divider";
-        io-channels = <&adc 0>; // P0.02 / A0
-        output-ohms = <1000000>;
-        full-ohms = <2000000>;
-    };
+
 
     physical_layout0: physical_layout0 {
         compatible = "zmk,physical-layout";
@@ -112,7 +106,7 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
 
         diode-direction = "col2row";
         row-gpios
-            = <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // NFC pad 1
+            = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
