@@ -17,6 +17,11 @@
             #binding-cells = <0>;
             bindings = <&kp LG(TAB)>;
         };
+        win_d: win_d {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(D)>;
+        };
     };
 
     behaviors {
@@ -26,6 +31,13 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             bindings = <&tab_win>, <&kp>;
+        };
+        ht_d: ht_d {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&win_d>, <&kp>;
         };
     };
 
@@ -38,14 +50,14 @@
             // ------------------------------------------------------------------------------------------------------------
             // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
-            // |  CTRL |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+            // |  CTRL |  A  |  S  | W+D  |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
             // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "("  |  |  ")"  |  N   |  M    |  ,    |  .   |   ;   |   '   |
             //                     | ALT  | C+SP | BKSP |  SPACE |  | ENTER | W+T  | BSPC  | GUI   |
 
             bindings = <
 &kp ESC       &kp N1    &kp N2         &kp N3     &kp N4     &kp N5   &kp N6    &kp N7        &kp N8  &kp N9  &kp N0     &lt 1 PRINTSCREEN
 &kp LEFT_ALT  &kp Q     &kp W          &kp E      &kp R      &kp T    &kp Y     &kp U         &kp I   &kp O   &kp P      &kp DEL
-&kp LSHIFT    &kp A     &kp S          &kp D      &kp F      &kp G    &kp H     &mt RALT J    &kp K   &kp L   &kp MINUS  &kp SLASH
+&kp LSHIFT    &kp A     &kp S          &ht_d 0 D  &kp F      &kp G    &kp H     &mt RALT J    &kp K   &kp L   &kp MINUS  &kp SLASH
 &kp LCTRL     &kp Z     &kp X          &kp C      &kp V      &kp B    &kp LPAR  &kp RPAR      &kp N   &kp M   &kp COMMA  &kp DOT            &kp SEMICOLON  &kp SINGLE_QUOTE
 &kp LALT      &kp LC(SPACE)  &kp BACKSPACE  &kp SPACE  &kp ENTER  &ht_tab 0 TAB  &kp BSPC  &kp LEFT_GUI
             >;
