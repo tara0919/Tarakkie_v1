@@ -17,6 +17,7 @@
             #binding-cells = <0>;
             bindings = <&kp LG(TAB)>;
         };
+
         win_d: win_d {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -32,6 +33,7 @@
             tapping-term-ms = <200>;
             bindings = <&tab_win>, <&kp>;
         };
+
         ht_d: ht_d {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
