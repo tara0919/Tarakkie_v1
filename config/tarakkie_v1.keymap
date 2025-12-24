@@ -25,7 +25,7 @@
             bindings = <
 &kp ESC       &kp N1    &kp N2         &kp N3     &kp N4     &kp N5   &kp N6    &kp N7        &kp N8  &kp N9  &kp N0     &lt 1 PRINTSCREEN
 &kp LEFT_ALT  &kp Q     &kp W          &kp E      &kp R      &kp T    &kp Y     &kp U         &kp I   &kp O   &kp P      &kp DEL
-&kp LSHIFT    &kp A     &kp S          &kp D      &kp F      &kp G    &kp H     &kp J         &kp K   &kp L   &kp MINUS  &kp SLASH
+&kp LSHIFT    &kp A     &kp S          &kp D      &kp F      &kp G    &kp H     &mt RALT J    &kp K   &kp L   &kp MINUS  &kp SLASH
 &kp LCTRL     &kp Z     &kp X          &kp C      &kp V      &kp B    &kp LPAR  &kp RPAR      &kp N   &kp M   &kp COMMA  &kp DOT            &kp SEMICOLON  &kp SINGLE_QUOTE
 &kp LALT      &kp LGUI  &kp BACKSPACE  &kp ENTER  &kp SPACE  &kp TAB  &kp BSPC  &kp LEFT_GUI
             >;
