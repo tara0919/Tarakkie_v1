@@ -41,6 +41,14 @@
             tapping-term-ms = <200>;
             bindings = <&win_d>, <&kp>;
         };
+
+        ht_g: ht_g {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&to>, <&kp>;
+        };
     };
 
     keymap {
@@ -59,7 +67,7 @@
             bindings = <
 &kp ESC       &kp N1         &kp N2         &kp N3     &kp N4       &kp N5         &kp N6    &kp N7        &kp N8  &kp N9  &kp N0     &lt 3 PRINTSCREEN
 &kp LEFT_ALT  &kp Q          &kp W          &kp E      &kp R        &kp T          &kp Y     &kp U         &kp I   &kp O   &kp P      &kp DEL
-&kp LSHIFT    &kp A          &kp S          &ht_d 0 D  &kp F        &kp G          &kp H     &mt RALT J    &kp K   &kp L   &kp MINUS  &kp SLASH
+&kp LSHIFT    &kp A          &kp S          &ht_d 0 D  &kp F        &ht_g 4 G      &kp H     &mt RALT J    &kp K   &kp L   &kp MINUS  &kp SLASH
 &kp LCTRL     &kp Z          &kp X          &kp C      &kp V        &kp B          &kp LPAR  &kp RPAR      &kp N   &kp M   &kp COMMA  &kp DOT            &kp SEMICOLON  &kp SINGLE_QUOTE
 &kp LALT      &kp LC(SPACE)  &kp BACKSPACE  &kp ENTER  &lt 1 SPACE  &ht_tab 0 TAB  &kp BSPC  &kp LEFT_GUI
             >;
