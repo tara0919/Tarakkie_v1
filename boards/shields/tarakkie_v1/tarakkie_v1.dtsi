@@ -116,10 +116,19 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
     };
 };
 
-&gpio0 {
-    blue_led_hog {
-        gpio-hog;
-        gpios = <6 GPIO_ACTIVE_HIGH>;
-        output-low;
+/ {
+    leds {
+        compatible = "gpio-leds";
+        blue_led: blue_led {
+            gpios = <&gpio0 6 GPIO_ACTIVE_LOW>;
+        };
+    };
+
+    status_leds {
+        compatible = "zmk,status-leds";
+        ble_status {
+            indicator = <&blue_led>;
+            status = <"ble-state">;
+        };
     };
 };
