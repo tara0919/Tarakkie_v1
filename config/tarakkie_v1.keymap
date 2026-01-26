@@ -278,7 +278,7 @@
 &kp LEFT_ALT  &kp Q          &kp W          &kp E              &kp R            &kp T          &kp Y     &kp U           &kp I      &kp O      &kp P      &kp DEL
 &kp LSHIFT    &ht_l0_ctrl_a 0 A     &kp S          &ht_d 0 D          &ht_l0_alt 0 F   &ht_g 4 G      &kp H     &mt RALT J      &kp K      &kp L      &mm_minus  &kp SLASH
 &kp LCTRL     &kp Z          &ht_l0_ctrl_x 0 X     &ht_l0_ctrl_c 0 C  &ht_l0_ctrl_v 0 V     &kp B          &kp JP_LPAREN  &kp JP_RPAREN  &kp N     &kp M           &kp COMMA  &kp DOT            &mm_semi   &mm_quote
-&kp LALT      &td_lang       &ht_tab 0 TAB  &lt 1 ENTER        &kp SPACE  &kp BACKSPACE  &kp BSPC  &kp LEFT_GUI
+&kp LALT      &td_lang       &lt 1 ENTER    &ht_tab 0 TAB  &kp BACKSPACE  &kp SPACE      &kp BSPC  &kp LEFT_GUI
             >;
         };
 
@@ -300,7 +300,7 @@
 &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_MINUS  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp KP_NUMBER_0  &trans           &kp KP_DOT       &kp KP_PLUS   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&to 0   &trans  &trans           &kp ENTER        &trans           &trans        &trans  &trans
+&to 0   &trans  &kp ENTER        &trans           &trans           &trans        &trans  &trans
             >;
         };
 
@@ -322,7 +322,7 @@
 &kp LALT   &kp Q   &kp F   &kp E      &kp R   &kp T   &kp Y   &kp U   &kp I   &kp O   &kp P      &trans
 &kp LSHFT  &kp C   &kp A   &kp W      &kp D   &kp G   &kp H   &kp J   &kp K   &kp L   &mm_minus  &kp SLASH
 &kp LCTRL  &kp Z   &kp X   &kp S      &kp V   &kp B   &trans  &trans  &kp N   &kp M   &kp COMMA  &kp DOT   &mm_semi  &mm_quote
-&trans     &trans  &trans  &kp SPACE  &trans  &trans  &trans  &to 0
+&trans     &trans  &kp SPACE  &trans     &trans  &trans  &trans  &to 0
             >;
         };
     };
