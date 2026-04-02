@@ -61,11 +61,11 @@
 
         { "row": 4, "col": 0, "matrix": [4,0], "label": "ALT", "x": 2.5, "y": 4.75 },
         { "row": 4, "col": 1, "matrix": [4,1], "label": "GUI", "x": 3.5, "y": 4.75 },
-        { "row": 4, "col": 2, "matrix": [4,2], "label": "LOWER", "x": 4.5, "y": 4.75, "r": 10, "rx": 4.5, "ry": 4.75 },
-        { "row": 4, "col": 3, "matrix": [4,3], "label": "SPACE", "x": 5.5, "y": 4.5, "r": 20, "rx": 5.5, "ry": 4.5 },
+        { "row": 4, "col": 2, "matrix": [4,2], "label": "LOWER", "x": 4.5, "y": 4.75, "r": 10, "rx": 4.5, "ry": 5.75 },
+        { "row": 4, "col": 3, "matrix": [4,3], "label": "SPACE", "x": 5.48, "y": 4.92, "r": 20, "rx": 5.48, "ry": 5.92 },
         
-        { "row": 4, "col": 7, "matrix": [4,7], "label": "ENTER", "x": 8.5, "y": 4.5, "r": -20, "rx": 9.5, "ry": 4.5 },
-        { "row": 4, "col": 8, "matrix": [4,8], "label": "RAISE", "x": 9.5, "y": 4.75, "r": -10, "rx": 10.5, "ry": 4.75 },
+        { "row": 4, "col": 7, "matrix": [4,7], "label": "ENTER", "x": 8.52, "y": 4.92, "r": -20, "rx": 9.52, "ry": 5.92 },
+        { "row": 4, "col": 8, "matrix": [4,8], "label": "RAISE", "x": 9.5, "y": 4.75, "r": -10, "rx": 10.5, "ry": 5.75 },
         { "row": 4, "col": 9, "matrix": [4,9], "label": "BSPC", "x": 10.5, "y": 4.75 },
         { "row": 4, "col": 10, "matrix": [4,10], "label": "GUI", "x": 11.5, "y": 4.75 }
       ]
