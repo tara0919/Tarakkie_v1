@@ -277,6 +277,45 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        win+d {
+            bindings = <&kp LG(D)>;
+            key-positions = <27 52>;
+        };
+
+        win+tab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <28 52>;
+        };
+
+        f2 {
+            bindings = <&kp F2>;
+            key-positions = <27 28>;
+        };
+
+        alt+f4 {
+            bindings = <&kp LA(F4)>;
+            key-positions = <27 28 52>;
+        };
+
+        lang1 {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <28 31>;
+        };
+
+        lang2 {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <27 32>;
+        };
+
+        paste {
+            bindings = <&mt LG(V) LS(LC(V))>;
+            key-positions = <52 40>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -291,11 +330,11 @@
             //                     | ALT  | LANG | TAB |  ENTER |  | SPACE | BKSP  | BSPC  | GUI   |
 
             bindings = <
-&kp ESC        &mm_n1       &mm_n2       &mm_n3       &mm_n4          &mm_n5       &mm_n6         &mm_n7         &mm_n8       &mm_n9    &mm_n0        &lt 3 PRINTSCREEN
-&kp LEFT_ALT   &kp Q        &mt LC(W) W  &kp E        &mt LC(R) R     &mt LC(T) T  &kp Y          &kp U          &kp I        &kp O     &kp P         &kp DEL
-&kp LSHIFT     &mt LC(A) A  &mt LC(S) S  &mt LC(D) D  &mt LEFT_ALT F  &kp G        &mt LC(H) H    &kp J          &kp K        &kp L     &mm_minus     &kp SLASH
-&kp LCTRL      &mt LC(Z) Z  &mt LC(X) X  &mt LC(C) C  &mt LC(V) V     &mt LC(B) B  &kp JP_LPAREN  &kp JP_RPAREN  &kp N        &kp M     &kp COMMA     &kp DOT            &mm_semi  &mm_quote
-&kp LG(LS(S))  &td_lang     &lt 1 ENTER  &kp TAB                                                  &kp BACKSPACE  &lt 2 SPACE  &kp BSPC  &kp LEFT_GUI
+&kp ESC       &mm_n1         &mm_n2       &mm_n3       &mm_n4          &mm_n5       &mm_n6         &mm_n7         &mm_n8       &mm_n9  &mm_n0        &kp LG(LS(S))
+&kp LEFT_ALT  &kp Q          &mt LC(W) W  &kp E        &mt LC(R) R     &mt LC(T) T  &kp Y          &kp U          &kp I        &kp O   &kp P         &kp DEL
+&kp LSHIFT    &mt LC(A) A    &mt LC(S) S  &mt LC(D) D  &mt LEFT_ALT F  &kp G        &mt LC(H) H    &kp J          &kp K        &kp L   &mm_minus     &kp SLASH
+&kp LCTRL     &mt LC(Z) Z    &mt LC(X) X  &mt LC(C) C  &mt LC(V) V     &mt LC(B) B  &kp JP_LPAREN  &kp JP_RPAREN  &kp N        &kp M   &kp COMMA     &kp DOT        &mm_semi  &mm_quote
+&to 2         &kp BACKSPACE  &lt 1 ENTER  &kp TAB                                                  &kp BACKSPACE  &lt 2 SPACE  &trans  &kp LEFT_GUI
             >;
         };
 
