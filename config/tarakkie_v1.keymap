@@ -107,6 +107,14 @@
             bindings = <&win_d>, <&kp>;
         };
 
+        tmt: tmt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+
         ht_g: ht_g {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -314,6 +322,16 @@
             bindings = <&mt LG(V) LS(LC(V))>;
             key-positions = <52 40>;
         };
+
+        combo_lparen {
+            bindings = <&kp JP_LPAREN>;
+            key-positions = <15 16>;
+        };
+
+        combo_rparen {
+            bindings = <&kp JP_RPAREN>;
+            key-positions = <19 20>;
+        };
     };
 
     keymap {
@@ -331,10 +349,10 @@
 
             bindings = <
 &kp ESC       &mm_n1         &mm_n2       &mm_n3       &mm_n4          &mm_n5       &mm_n6         &mm_n7         &mm_n8       &mm_n9       &mm_n0        &kp LG(LS(S))
-&kp LEFT_ALT  &kp Q          &mt LC(W) W  &kp E        &mt LC(R) R     &mt LC(T) T  &mt LC(Y) Y    &mt LC(U) U    &mt LC(I) I  &mt LC(O) O  &mt LC(P) P   &kp DEL
-&kp LSHIFT    &mt LC(A) A    &mt LC(S) S  &mt LC(D) D  &mt LEFT_ALT F  &kp G        &mt LC(H) H    &kp J          &kp K        &kp L        &mm_minus     &kp SLASH
-&kp LCTRL     &mt LC(Z) Z    &mt LC(X) X  &mt LC(C) C  &mt LC(V) V     &mt LC(B) B  &kp JP_LPAREN  &kp JP_RPAREN  &kp N        &kp M        &kp COMMA     &kp DOT        &mm_semi  &mm_quote
-&to 2         &kp BACKSPACE  &lt 1 ENTER  &kp TAB                                                  &kp BACKSPACE  &lt 2 SPACE  &trans       &kp LEFT_GUI
+&kp LEFT_ALT  &kp Q          &tmt LC(W) W  &kp E        &tmt LC(R) R     &tmt LC(T) T  &tmt LC(Y) Y    &tmt LC(U) U    &tmt LC(I) I  &tmt LC(O) O  &tmt LC(P) P   &kp DEL
+&kp LSHIFT    &tmt LC(A) A    &tmt LC(S) S  &tmt LC(D) D  &tmt LEFT_ALT F  &kp G        &tmt LC(H) H    &kp J          &kp K        &kp L        &mm_minus     &kp SLASH
+&kp LCTRL     &tmt LC(Z) Z    &tmt LC(X) X  &tmt LC(C) C  &tmt LC(V) V     &tmt LC(B) B  &kp JP_LBRACKET  &kp JP_RBRACKET  &kp N        &kp M        &kp COMMA     &kp DOT        &mm_semi  &mm_quote
+&to 2         &td_lang       &lt 1 ENTER  &kp TAB                                                  &kp BACKSPACE  &lt 2 SPACE  &trans       &kp LEFT_GUI
             >;
         };
 
